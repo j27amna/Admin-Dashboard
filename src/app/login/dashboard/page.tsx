@@ -86,6 +86,7 @@ export default function AdminDashboard() {
       Swal.fire("Deleted", "Order has been deleted successfully.", "success");
     } catch (error) {
       Swal.fire("Error", "Oops! Something went wrong.", "error");
+       console.error("Error Fetching Orders", error);
     }
   };
 
